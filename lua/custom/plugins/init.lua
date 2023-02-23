@@ -3,10 +3,4 @@
 --
 -- See the kickstart.nvim README for more information
 return {
-	"ggandor/leap.nvim",
-	config = function()
-		require("leap").add_default_mappings()
-	end,
-
-	"dstein64/vim-startuptime",
 }
