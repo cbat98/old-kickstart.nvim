@@ -234,10 +234,6 @@ vim.o.termguicolors = true
 -- Disable line wrap
 vim.wo.wrap = false
 
--- Enable indent and smart indent
-vim.o.autoindent = true
-vim.o.smartindent = true
-
 -- [[ Basic Keymaps ]]
 
 -- Keymaps for better default experience
