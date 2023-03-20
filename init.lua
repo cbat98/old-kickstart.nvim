@@ -495,3 +495,15 @@ cmp.setup {
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
+
+-- Enable relative line numbers
+vim.opt.relativenumber = true
+
+-- Disable clipboard syncing
+vim.o.clipboard = ""
+
+-- Disable line-wrap
+vim.wo.wrap = false
+
+-- Set hotkey to show file tree
+vim.keymap.set("n", "<leader>pv", vim.cmd.Ex, { desc = 'Show directory tree' })
