@@ -510,3 +510,5 @@ vim.keymap.set("n", "<leader>pv", vim.cmd.Ex, { desc = 'Show directory tree' })
 
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
+
+vim.opt.scrolloff = 10
