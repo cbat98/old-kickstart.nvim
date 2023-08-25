@@ -11,9 +11,11 @@ for option, value in pairs(powershell_options) do
   vim.opt[option] = value
 end
 
+vim.keymap.set("n", "<leader>tt", vim.cmd.ToggleTerm, { desc = '[T]oggle [T]erminal' })
+
 return {
-    'akinsho/toggleterm.nvim',
-    version = "*",
-    opts = {
-    }
+  'akinsho/toggleterm.nvim',
+  version = "*",
+  opts = {
+  },
 }
