@@ -12,7 +12,7 @@ for option, value in pairs(powershell_options) do
 end
 
 vim.keymap.set("n", "<leader>tt", vim.cmd.ToggleTerm, { desc = '[T]oggle [T]erminal' })
-vim.keymap.set("t", "<esc>", "<C-\\><C-n>", { desc = "Enter normal mode" })
+vim.keymap.set("t", "<esc><esc>", "<C-\\><C-n>", { desc = "Enter normal mode" })
 
 return {
   'akinsho/toggleterm.nvim',
