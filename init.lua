@@ -372,7 +372,6 @@ local servers = {
   powershell_es = {},
   angularls = {},
   tsserver = {},
-  csharp_ls = {},
   rust_analyzer = {}
 }
 
