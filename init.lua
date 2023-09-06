@@ -422,4 +422,4 @@ cmp.setup {
   },
 }
 
-require("custom.sets")
+require("custom.set")
