@@ -449,7 +449,12 @@ cmp.setup {
 -- vim: ts=2 sts=2 sw=2 et
 
 -- Enable relative line numbers
+vim.opt.number = true
 vim.opt.relativenumber = true
+
+-- Enable nice search highlight
+vim.opt.hlsearch = false
+vim.opt.incsearch = true
 
 -- Disable clipboard syncing
 vim.opt.clipboard = ""
