@@ -452,7 +452,7 @@ cmp.setup {
 vim.opt.relativenumber = true
 
 -- Disable clipboard syncing
-vim.o.clipboard = ""
+vim.opt.clipboard = ""
 
 -- Disable line-wrap
 vim.wo.wrap = false
@@ -464,5 +464,5 @@ vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 
 vim.opt.scrolloff = 10
+vim.opt.swapfile = false
 
-vim.o.swapfile = false
