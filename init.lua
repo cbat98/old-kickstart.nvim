@@ -460,8 +460,12 @@ vim.wo.wrap = false
 -- Set hotkey to show file tree
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex, { desc = 'Show directory tree' })
 
+-- Nice tab behavior
 vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
+vim.opt.expandtab = true
+
 vim.opt.scrolloff = 8
 
 vim.opt.swapfile = false
