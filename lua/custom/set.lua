@@ -7,8 +7,8 @@ vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
 -- Case-insensitive searching UNLESS \C or capital in search
-vim.o.ignorecase = true
-vim.o.smartcase = true
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
 
 -- Disable clipboard syncing
 vim.opt.clipboard = ""
@@ -32,17 +32,17 @@ vim.opt.swapfile = false
 vim.opt.updatetime = 50
 
 -- Enable mouse mode
-vim.o.mouse = 'a'
+vim.opt.mouse = 'a'
 
 -- Save undo history
-vim.o.undofile = true
+vim.opt.undofile = true
 
 -- Keep signcolumn on by default
 vim.wo.signcolumn = 'yes'
 
 -- Set completeopt to have a better completion experience
-vim.o.completeopt = 'menuone,noselect'
+vim.opt.completeopt = 'menuone,noselect'
 
 -- Pretty colours
-vim.o.termguicolors = true
+vim.opt.termguicolors = true
 
