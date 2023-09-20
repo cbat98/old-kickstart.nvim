@@ -46,3 +46,5 @@ vim.opt.completeopt = 'menuone,noselect'
 -- Pretty colours
 vim.opt.termguicolors = true
 
+-- Colour Column
+vim.opt.colorcolumn = "120"
