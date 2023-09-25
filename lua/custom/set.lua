@@ -31,8 +31,9 @@ vim.opt.swapfile = false
 
 vim.opt.updatetime = 50
 
--- Enable mouse mode
-vim.opt.mouse = 'a'
+-- Mouse settings
+vim.opt.mouse = ""
+vim.opt.mousehide = true
 
 -- Save undo history
 vim.opt.undofile = true
