@@ -17,7 +17,7 @@ vim.opt.clipboard = ""
 vim.wo.wrap = false
 
 -- Set hotkey to show file tree
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex, { desc = 'Show directory tree' })
+vim.keymap.set("n", "<leader>pv", vim.cmd.Ex, { desc = "Show directory tree" })
 
 -- Nice tab behavior
 vim.opt.tabstop = 4
@@ -38,10 +38,10 @@ vim.opt.mouse = 'a'
 vim.opt.undofile = true
 
 -- Keep signcolumn on by default
-vim.wo.signcolumn = 'yes'
+vim.wo.signcolumn = "yes"
 
 -- Set completeopt to have a better completion experience
-vim.opt.completeopt = 'menuone,noselect'
+vim.opt.completeopt = "menuone,noselect"
 
 -- Pretty colours
 vim.opt.termguicolors = true
