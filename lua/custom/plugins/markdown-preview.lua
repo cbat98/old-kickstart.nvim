@@ -1,4 +1,5 @@
 vim.keymap.set("n", "<leader>mp", vim.cmd.MarkdownPreviewToggle, { desc = '[M]arkdown [P]review' })
+vim.g.mkdp_theme = "light"
 
 return {
     "iamcco/markdown-preview.nvim",
