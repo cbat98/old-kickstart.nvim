@@ -6,7 +6,10 @@ return {
 			debug = false,
 			sources = {
 				null_ls.builtins.diagnostics.eslint_d,
-				null_ls.builtins.formatting.eslint_d
+                null_ls.builtins.formatting.eslint_d,
+                null_ls.builtins.diagnostics.markdownlint_cli2.with {
+                    args = { "$FILENAME" }
+                }
 			}
 		})
 	end
