@@ -224,7 +224,8 @@ require('nvim-treesitter.configs').setup {
         "yaml",
         "javascript",
         "typescript",
-        "html"
+        "html",
+        "json"
     },
 
     sync_install = false,
