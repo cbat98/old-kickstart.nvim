@@ -221,7 +221,6 @@ require('nvim-treesitter.configs').setup {
         "vimdoc",
         "query",
         "c_sharp" ,
-        "rust",
         "yaml",
         "javascript",
         "typescript",
@@ -359,7 +358,6 @@ local servers = {
     powershell_es = {},
     angularls = {},
     tsserver = {},
-    rust_analyzer = {}
 }
 
 -- Setup neovim lua configuration
