@@ -8,6 +8,9 @@ return {
                 null_ls.builtins.formatting.eslint_d,
                 null_ls.builtins.diagnostics.markdownlint_cli2.with {
                     args = { "$FILENAME" }
+                },
+                null_ls.builtins.formatting.jq.with {
+                    args = { ".", "--indent", 4 }
                 }
 			},
 		})
