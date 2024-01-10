@@ -216,16 +216,14 @@ vim.keymap.set('n', '<leader>sr', require('telescope.builtin').resume, { desc = 
 require('nvim-treesitter.configs').setup {
     -- Add languages to be installed here that you want installed for treesitter
     ensure_installed = {
+        "c",
         "lua",
         "vim",
         "vimdoc",
         "query",
         "c_sharp" ,
         "yaml",
-        "javascript",
-        "typescript",
-        "html",
-        "json"
+        "jq"
     },
 
     sync_install = false,
