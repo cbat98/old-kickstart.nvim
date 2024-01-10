@@ -359,8 +359,6 @@ local servers = {
         },
     },
     powershell_es = {},
-    angularls = {},
-    tsserver = {},
 }
 
 -- Setup neovim lua configuration
