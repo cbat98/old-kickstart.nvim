@@ -9,6 +9,9 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
+require("custom.set")
+require("custom.remap")
+
 -- Install package manager
 --    https://github.com/folke/lazy.nvim
 --    `:help lazy.nvim.txt` for more info
@@ -434,5 +437,3 @@ cmp.setup {
     },
 }
 
-require("custom.set")
-require("custom.remap")
