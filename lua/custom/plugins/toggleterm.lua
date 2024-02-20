@@ -1,13 +1,24 @@
-local powershell_options = {
-  shell = vim.fn.executable "pwsh" == 1 and "powershell" or "pwsh",
-  shellcmdflag = "-NoLogo -NoProfile -ExecutionPolicy RemoteSigned -Command [Console]::InputEncoding=[Console]::OutputEncoding=[System.Text.Encoding]::UTF8;",
-  shellredir = "-RedirectStandardOutput %s -NoNewWindow -Wait",
-  shellpipe = "2>&1 | Out-File -Encoding UTF8 %s; exit $LastExitCode",
-  shellquote = "",
-  shellxquote = "",
+local powershell_available = vim.fn.executable "powershell" == 1
+
+local shell_options = {
 }
 
-for option, value in pairs(powershell_options) do
+if powershell_available then
+    shell_options = {
+        shell = "powershell",
+        shellcmdflag = "-NoLogo -NoProfile -ExecutionPolicy RemoteSigned -Command [Console]::InputEncoding=[Console]::OutputEncoding=[System.Text.Encoding]::UTF8;",
+        shellredir = "-RedirectStandardOutput %s -NoNewWindow -Wait",
+        shellpipe = "2>&1 | Out-File -Encoding UTF8 %s; exit $LastExitCode",
+        shellquote = "",
+        shellxquote = ""
+    }
+else
+    shell_options = {
+        shell = "bash"
+    }
+end
+
+for option, value in pairs(shell_options) do
   vim.opt[option] = value
 end
 
